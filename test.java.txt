@@ -1,0 +1,65 @@
+import java.util.*;
+
+class Customwe
+{
+  int real;
+  
+  int img;
+  
+  Customwe()
+  {
+	
+  }
+  
+ 
+ Customwe( int real1, int img1 )
+ {
+	 real= real1;
+	 img= img1;
+ }
+  
+  void display()
+  {
+	   System.out.println("Sum ="+real+"+i"+img);
+	   
+  }
+  void add( Customwe ob4,Customwe ob5)
+  {
+	 real = ob4.real+ob5.real;
+	 img = ob4.img+ob5.img;
+  }
+   
+  
+
+
+}
+
+  
+  class Customer3
+  {
+	  public static void main(String args[])
+	  {
+		  Customwe ob  = new Customwe(10,30);
+		  Customwe ob1 = new Customwe(20,40);
+		  Customwe ob3 = new Customwe();
+		  ob3.add(ob,ob1);
+		  ob3.display();
+			
+		}
+	  
+  }
+  
+
+		  
+  
+	  
+	  
+	   
+	   
+	   
+	   
+	 
+	  
+  
+	  
+       	  
